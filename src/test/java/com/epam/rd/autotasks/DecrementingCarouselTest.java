@@ -1,17 +1,14 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.decrementing_carousel_with_limit.src.test.java.com.epam.rd.autotasks;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class DecrementingCarouselTest {
 
     @Test
     void checkAddElement() {
-        DecrementingCarousel carousel = new DecrementingCarousel(5);
+        com.epam.rd.autotasks.DecrementingCarousel carousel = new com.epam.rd.autotasks.DecrementingCarousel(5);
         assertFalse(carousel.addElement(0));
         assertFalse(carousel.addElement(-1));
         assertFalse(carousel.addElement(-123456));
@@ -43,7 +40,7 @@ class DecrementingCarouselTest {
 
     @Test
     void checkAddElementAfterRun() {
-        DecrementingCarousel carousel = new DecrementingCarousel(5);
+        com.epam.rd.autotasks.DecrementingCarousel carousel = new com.epam.rd.autotasks.DecrementingCarousel(5);
 
         assertTrue(carousel.addElement(1));
         assertTrue(carousel.addElement(2));
@@ -62,7 +59,7 @@ class DecrementingCarouselTest {
 
     @Test
     void testCarouselRunsSingleTimeOnly() {
-        DecrementingCarousel carousel = new DecrementingCarousel(4);
+        com.epam.rd.autotasks.DecrementingCarousel carousel = new com.epam.rd.autotasks.DecrementingCarousel(4);
         carousel.addElement(4);
 
         assertNotNull(carousel.run());

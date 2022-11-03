@@ -1,4 +1,4 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.decrementing_carousel_with_limit.src.main.java.com.epam.rd.autotasks;
 
 import java.util.LinkedList;
 
